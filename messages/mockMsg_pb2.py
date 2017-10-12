@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='mockMsg.proto',
-  package='mateROV',
+  package='rmExamples',
   syntax='proto2',
-  serialized_pb=_b('\n\rmockMsg.proto\x12\x07mateROV\"\x1c\n\x07MockMsg\x12\x11\n\tmockValue\x18\x01 \x02(\x05')
+  serialized_pb=_b('\n\rmockMsg.proto\x12\nrmExamples\"\x1c\n\x07MockMsg\x12\x11\n\tmockValue\x18\x01 \x02(\x05')
 )
 
 
@@ -27,13 +27,13 @@ DESCRIPTOR = _descriptor.FileDescriptor(
 
 _MOCKMSG = _descriptor.Descriptor(
   name='MockMsg',
-  full_name='mateROV.MockMsg',
+  full_name='rmExamples.MockMsg',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='mockValue', full_name='mateROV.MockMsg.mockValue', index=0,
+      name='mockValue', full_name='rmExamples.MockMsg.mockValue', index=0,
       number=1, type=5, cpp_type=1, label=2,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -51,8 +51,8 @@ _MOCKMSG = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=26,
-  serialized_end=54,
+  serialized_start=29,
+  serialized_end=57,
 )
 
 DESCRIPTOR.message_types_by_name['MockMsg'] = _MOCKMSG
@@ -61,7 +61,7 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 MockMsg = _reflection.GeneratedProtocolMessageType('MockMsg', (_message.Message,), dict(
   DESCRIPTOR = _MOCKMSG,
   __module__ = 'mockMsg_pb2'
-  # @@protoc_insertion_point(class_scope:mateROV.MockMsg)
+  # @@protoc_insertion_point(class_scope:rmExamples.MockMsg)
   ))
 _sym_db.RegisterMessage(MockMsg)
 
