@@ -9,7 +9,7 @@ PORT = os.environ.get("BIND_PORT", 11297)
 
 FREQUENCY = 10
 
-class MockGuiModule(rm.ProtoModule):
+class MockDisplayModule(rm.ProtoModule):
     def __init__(self, addr, port):
         self.subscriptions = [MsgType.MOCK_MSG]
         super().__init__(addr, port, message_buffers, MsgType, FREQUENCY, self.subscriptions)
@@ -42,7 +42,7 @@ class MockGuiModule(rm.ProtoModule):
 
 
 def main():
-    module = MockGuiModule(ADDRESS, PORT)
+    module = MockDisplayModule(ADDRESS, PORT)
     module.run()
 
 if __name__ == "__main__":
